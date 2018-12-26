@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(DreamerController.BASE_URL)
-public class DreamerController {
+@RequestMapping(AccountController.BASE_URL)
+public class AccountController {
 
     public static final String BASE_URL = "/api/v1/dreamers";
 
     private final AccountService accountService;
 
-    public DreamerController(AccountService accountService) {
+    public AccountController(AccountService accountService) {
         this.accountService = accountService;
     }
 
@@ -31,7 +31,7 @@ public class DreamerController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Account saveAccount (Account account){
+    public Account saveAccount (@RequestBody Account account){
         return accountService.saveAccount(account);
     }
 }

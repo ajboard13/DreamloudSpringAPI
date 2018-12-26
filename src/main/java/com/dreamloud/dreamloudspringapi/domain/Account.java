@@ -15,4 +15,15 @@ public class Account {
     private Long acct_id;
     private String acct_fname;
     private String acct_lname;
+    private String acct_email;
+    private String acct_username;
+    private String acct_pw;
+    private String acct_mi;
+    private String acct_dob;
+    private Long acct_zip;
+    private String acct_cntry;
+    private String acct_pic;
+    private String acct_bio;
+    private byte acct_online;
+    private byte acct_flgn;
 }
