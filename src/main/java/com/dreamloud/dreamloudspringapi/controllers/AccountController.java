@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping(AccountController.BASE_URL)
 public class AccountController {
 
-    public static final String BASE_URL = "/api/v1/dreamers";
+    public static final String BASE_URL = "/api/v1/accounts";
 
     private final AccountService accountService;
 
