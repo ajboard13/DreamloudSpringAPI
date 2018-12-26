@@ -1,7 +1,7 @@
 package com.dreamloud.dreamloudspringapi.controllers;
 
 import com.dreamloud.dreamloudspringapi.domain.Account;
-import com.dreamloud.dreamloudspringapi.service.DreamerService;
+import com.dreamloud.dreamloudspringapi.service.AccountService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,25 +13,25 @@ public class DreamerController {
 
     public static final String BASE_URL = "/api/v1/dreamers";
 
-    private final DreamerService dreamerService;
+    private final AccountService accountService;
 
-    public DreamerController(DreamerService dreamerService) {
-        this.dreamerService = dreamerService;
+    public DreamerController(AccountService accountService) {
+        this.accountService = accountService;
     }
 
     @GetMapping
-    List<Account> getAllDreamers() {
-        return  dreamerService.findAllDreamers();
+    List<Account> getAllAccounts() {
+        return  accountService.findAllAccounts();
     }
 
     @GetMapping("/{id}")
-    public Account getDreamerById(@PathVariable Long id){
-        return dreamerService.findDreamerById(id);
+    public Account getAccountById(@PathVariable Long id){
+        return accountService.findAccountById(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Account saveDreamer (Account dreamer){
-        return dreamerService.saveDreamer(dreamer);
+    public Account saveAccount (Account account){
+        return accountService.saveAccount(account);
     }
 }
