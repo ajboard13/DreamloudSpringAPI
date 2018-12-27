@@ -2,9 +2,7 @@ package com.dreamloud.dreamloudspringapi.controllers;
 
 import com.dreamloud.dreamloudspringapi.domain.Post;
 import com.dreamloud.dreamloudspringapi.service.PostService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,4 +23,23 @@ public class PostController {
         return postService.getAllPosts();
     }
 
+    @GetMapping("/{postId}")
+    Post getPostById(@PathVariable Long postId){
+        return postService.getPostById(postId);
+    }
+
+    @GetMapping("/acct/{acctId}")
+    List<Post> getPostsByAcctId(@PathVariable Long acctId) {
+        return postService.getAllPostsByAcctId(acctId);
+    }
+
+    @GetMapping("/dream/{dreamId}")
+    List<Post> getPostsByDreamId(@PathVariable Long dreamId) {
+        return postService.getAllPostsByDreamId(dreamId);
+    }
+
+    @PostMapping
+    Post savePost(@RequestBody Post post) {
+        return postService.savePost(post);
+    }
 }

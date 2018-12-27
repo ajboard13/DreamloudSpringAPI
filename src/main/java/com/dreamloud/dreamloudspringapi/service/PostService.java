@@ -11,4 +11,5 @@ public interface PostService {
     Post getPostById(Long postId);
     Post savePost(Post post);
 
+    List<Post> getAllPostsByAcctId(Long acctId);
 }
