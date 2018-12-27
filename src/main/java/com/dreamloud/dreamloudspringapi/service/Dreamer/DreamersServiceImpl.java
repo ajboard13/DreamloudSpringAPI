@@ -1,10 +1,9 @@
-package com.dreamloud.dreamloudspringapi.service;
+package com.dreamloud.dreamloudspringapi.service.Dreamer;
 
 import com.dreamloud.dreamloudspringapi.domain.Dreamers;
 import com.dreamloud.dreamloudspringapi.repositories.DreamersRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.List;
 
 @Service

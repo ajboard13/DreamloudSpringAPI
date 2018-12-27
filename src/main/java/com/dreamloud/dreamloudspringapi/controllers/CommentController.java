@@ -1,7 +1,7 @@
 package com.dreamloud.dreamloudspringapi.controllers;
 
 import com.dreamloud.dreamloudspringapi.domain.Comment;
-import com.dreamloud.dreamloudspringapi.service.CommentService;
+import com.dreamloud.dreamloudspringapi.service.Comment.CommentService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

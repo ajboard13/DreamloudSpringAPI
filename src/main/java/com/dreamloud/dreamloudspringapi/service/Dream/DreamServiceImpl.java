@@ -1,4 +1,4 @@
-package com.dreamloud.dreamloudspringapi.service;
+package com.dreamloud.dreamloudspringapi.service.Dream;
 
 import com.dreamloud.dreamloudspringapi.domain.Dream;
 import com.dreamloud.dreamloudspringapi.repositories.DreamRepository;

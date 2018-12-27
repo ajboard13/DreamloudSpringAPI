@@ -1,7 +1,7 @@
 package com.dreamloud.dreamloudspringapi.controllers;
 
 import com.dreamloud.dreamloudspringapi.domain.Post;
-import com.dreamloud.dreamloudspringapi.service.PostService;
+import com.dreamloud.dreamloudspringapi.service.Post.PostService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

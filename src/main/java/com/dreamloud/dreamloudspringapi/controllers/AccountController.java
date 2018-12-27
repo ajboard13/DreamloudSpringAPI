@@ -1,7 +1,7 @@
 package com.dreamloud.dreamloudspringapi.controllers;
 
 import com.dreamloud.dreamloudspringapi.domain.Account;
-import com.dreamloud.dreamloudspringapi.service.AccountService;
+import com.dreamloud.dreamloudspringapi.service.Account.AccountService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

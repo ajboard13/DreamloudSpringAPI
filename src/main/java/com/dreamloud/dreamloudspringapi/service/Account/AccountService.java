@@ -1,4 +1,4 @@
-package com.dreamloud.dreamloudspringapi.service;
+package com.dreamloud.dreamloudspringapi.service.Account;
 
 import com.dreamloud.dreamloudspringapi.domain.Account;
 

@@ -1,4 +1,4 @@
-package com.dreamloud.dreamloudspringapi.service;
+package com.dreamloud.dreamloudspringapi.service.Comment;
 
 import com.dreamloud.dreamloudspringapi.domain.Comment;
 import com.dreamloud.dreamloudspringapi.repositories.CommentRepository;
